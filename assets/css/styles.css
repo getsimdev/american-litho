@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-blue: #92b1e7;
+    --beige: #fdeed1;
+    --logo-green: #197548;
+    --khaki: #a2a173;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+/* 2. Remove default margin */
+* {
+margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+a, a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: var(--logo-green);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--beige);
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.banner {
+    width: 100%;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.banner .home-banner {
+    background: url('../images/bg-homepage.jpg') no-repeat top left;
+    background-size: contain;
+    padding: 90px 30px 30px 290px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-gradient {
+    background: var(--light-blue);
+    background: linear-gradient(180deg, rgba(146, 177, 231, 1) 0%, rgba(182, 216, 241, 1) 25%, rgba(255, 255, 255, 1) 45%, rgba(192, 185, 161, 1) 60%, rgba(242, 220, 160, 1) 75%, rgba(255, 255, 255, 1) 100%);
+}
+
+.bg-blue {
+    background: var(--light-blue);
+}
+
+.bg-khaki {
+    background: var(--khaki);
+}
+
+.bg-beige {
+    background: var(--beige);
+}
+
+.thumbnail {
+    padding: 10px 20px;
+}
+
+footer {
+    border-top: 5px solifd #000;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 400;
+}
+.sr-only, .sr-only * {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+@media (max-width: 600px) {
+    .banner .home-banner {
+        padding: 35% 30px 30px;
+    }
+}
