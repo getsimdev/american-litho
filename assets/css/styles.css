@@ -24,6 +24,10 @@ body {
     color: #000;
 }
 
+main {
+    min-height: calc(100vh - 159px);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     line-height: 1.1;
